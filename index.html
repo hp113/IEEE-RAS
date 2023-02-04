@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE-RAS Hackathon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@100;400;700;900&family=Moon+Dance&family=Sacramento&family=Ubuntu&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <script>
+            var countdownDate = new Date("Feb 14, 2023 17:00:00").getTime();
+            var x = setInterval(function () {
+                var now = new Date().getTime();
+                var distance = countdownDate - now;
+    
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / (1000));
+    
+                document.getElementById("days").innerHTML = days;
+                document.getElementById("hours").innerHTML = hours;
+                document.getElementById("minutes").innerHTML = minutes;
+                document.getElementById("seconds").innerHTML = seconds;
+            }, 1000) 
+        </script>
+</head>
+
+<body>
+    <section class="navigation_bar">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="round" src="logo.png" alt="" width="59" height="29">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about_section">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <section id="hackathon_name">
+        <h1>IEEE-RAS Hackathon</h1>
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <div class="inner">
+                    <h2 class="card-h-1st">Hackathon begins in...</h2>
+                <div class="countdown">
+                    <div class="timers">
+                        <p id="days" class="countdown-number">00</p>
+                        <span><p>Days</p></span>
+                    </div>
+                    <div class="timers">
+                        <p id="hours" class="countdown-number">00</p>
+                        <span><p>Hours</p></span>
+                    </div>
+                    <div class="timers">
+                        <p id="minutes" class="countdown-number">00</p>
+                        <span><p>Minutes</p></span>
+                    </div>
+                    <div class="timers">
+                        <p id="seconds" class="countdown-number">00</p>
+                        <span><p>Seconds</p></span>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+            <div class="col-lg-6">
+                <div class="inner">
+                    <form action="/" method="post">
+                        <input type="text" name="name" id="name" placeholder="Enter your name">
+                        <input type="email" name="email" id="email" placeholder="Enter your email">
+                        <input type="submit" value="submit">
+                        <!-- <button type="submit" class="btn btn-outline-light">Register Now</button> -->
+                    </form>
+                    <!-- <button onclick=" window.open('http://vitchennaievents.com/', '_blank'); return false;" type="button"
+                        class="btn btn-outline-dark">Register Now</button> -->
+                </div>
+                
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about_section">
+        <h1>About the Event</h1>
+        <div class="about">
+            <div class="about-inner">
+                <p class="left-align">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, reprehenderit. Dolorum cupiditate, maiores
+                    reiciendis possimus, minus quidem veritatis accusantium fugiat minima atque incidunt ipsum rem inventore
+                    aliquid laborum accusamus nisi.
+                </p>
+                <img class="about-image-1" src="https://media0.giphy.com/media/qqcPWRPswOGaU0MM2O/giphy.gif?cid=ecf05e474qcyerpd6vfetfrfzbkcknbuf1l5ihnop0dohulv&rid=giphy.gif&ct=s" alt="photo">
+            </div>
+            <div class="about-inner">
+                <img class="about-image-2 round" src="https://media3.giphy.com/media/17zGqeqwnXxjcXC6KR/200w.webp?cid=ecf05e474qcyerpd6vfetfrfzbkcknbuf1l5ihnop0dohulv&rid=200w.webp&ct=s" alt="photo">
+                <p class="right-align">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, reprehenderit. Dolorum cupiditate, maiores
+                    reiciendis possimus, minus quidem veritatis accusantium fugiat minima atque incidunt ipsum rem inventore
+                    aliquid laborum accusamus nisi.
+                </p>
+            </div>
+            <div class="about-inner">
+                <p class="left-align">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, reprehenderit. Dolorum cupiditate, maiores
+                    reiciendis possimus, minus quidem veritatis accusantium fugiat minima atque incidunt ipsum rem inventore
+                    aliquid laborum accusamus nisi.
+                </p>
+                <img class="about-image-3" src="https://media3.giphy.com/media/a23aOO0DfxSrI2dFjU/200w.webp?cid=ecf05e47lppmw5210hk0kqxil3gawaohhi4do3aqe0z5kxjk&rid=200w.webp&ct=s" alt="photo">
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+</html>

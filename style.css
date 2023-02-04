@@ -1,0 +1,112 @@
+/* custom css tags  */
+body{
+    font-family: 'Merriweather', serif;
+}
+p{
+    margin-bottom: 0rem;
+    text-align: center;
+}
+h2, h1{
+    text-align: center;
+}
+span{
+    text-align: center;
+}
+
+/* custom classes  */
+.round{
+    border-radius: 100%;
+}
+.left-align{
+    text-align: left;
+}
+.right-align{
+    text-align: right;
+}
+
+h1{
+    font-family: 'Moon Dance', cursive;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+/* home page  */
+#hackathon_name{
+    color: white;
+    
+    background-image: linear-gradient(45deg, red ,  #d310d3, red, #d310d3);
+    background-size: 300%;
+    animation: bganim 4s linear 2s infinite alternate;
+}
+@keyframes bganim{
+    0%{background-position: left bottom ;}
+    100%{background-position: center;}
+    /* 100%{background-position: left;} */
+}
+.countdown{
+    display: flex;
+    flex-direction: row;
+    /* margin: auto; */
+}
+
+.countdown-number{
+    font-size: 45px;
+}
+.timers{
+    padding: 9px;
+    border: 2px solid white;
+    margin: 2px;
+    border-radius: 17px;
+    width: 86px;
+}
+.col-lg-6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 74px;
+}
+.card-h-1st{
+    font-size: 49px;
+    margin-bottom: 23px;
+}
+
+/* about section  */
+#about_section{
+    color: white;
+    /* background-color: red; */
+    background-image: linear-gradient(45deg, red ,  #d310d3, red, #d310d3);
+    background-size: 300%;
+    animation: bganim 4s linear 2s infinite alternate;
+}
+
+.about-inner{
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: center; */
+    align-items: center;
+    margin: auto;
+    width: 76%;
+}
+
+.about-image-1, .about-image-3{
+    float: right;
+}
+
+.about-image-2{
+    float: left;
+}
+
+
+
+/* home section  */
+.inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    width: 100%;
+    height: 100%;
+    padding: 98px 125px
+}
